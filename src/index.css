@@ -36,4 +36,5 @@ body {
 
 .vercel-page-container {
   background-color: #fafafa;
+  overflow-x: hidden;
 }
