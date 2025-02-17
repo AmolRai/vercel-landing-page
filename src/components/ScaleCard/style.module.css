@@ -1,0 +1,33 @@
+.scaleCard {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}
+
+.custom {
+  background-color: white;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #171717;
+  border: 1px solid #ebebeb;
+  border-radius: 2rem;
+  font-weight: normal;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .scaleCard {
+    padding: 1rem;
+  }
+  .custom {
+    padding: 10px;
+  }
+}

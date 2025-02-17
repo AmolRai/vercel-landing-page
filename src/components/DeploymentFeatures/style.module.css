@@ -1,0 +1,158 @@
+.deploymentContainer {
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.deploymentHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666666;
+  font-weight: lighter;
+}
+
+.rollbackTitle {
+  color: #171717;
+  font-size: 24px;
+  margin-top: 1.2rem;
+  line-height: 2rem;
+}
+
+.deploymentInteract {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.deployCard {
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid #00000014;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+  padding: 12px;
+  align-items: center;
+  gap: 1rem;
+  align-self: flex-start;
+}
+
+.deployLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  color: #666666;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #171717;
+}
+
+.conformanceCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border: 1px solid #00000014;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+  background-color: white;
+  border-radius: 12px;
+  gap: 1rem;
+  width: 27rem;
+}
+
+.conformanceCard p {
+  color: #171717;
+  padding: 1rem;
+}
+
+.conformanceCard span {
+  color: #666666;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.conformanceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.conformanceContent div {
+  background-color: #fafafa;
+  display: flex;
+  padding: 1rem 10px;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conformanceContent img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.conformanceLeft {
+  flex: 1;
+  border-right: 1px solid #00000014;
+}
+
+.conformanceRight {
+  flex: 1;
+}
+
+.conformanceTitle {
+  color: #171717;
+  font-size: 24px;
+  margin-top: 1.2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .deploymentContainer {
+    padding: 1rem;
+    justify-content: center;
+  }
+  .deploymentContainerLeft {
+    width: 100%;
+  }
+  .rollbackTitle {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .vercelSiteText {
+    display: none;
+  }
+  .platform {
+    align-self: flex-start;
+  }
+  .conformanceTitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .deploymentContainerRight {
+    margin-top: 2.5rem;
+  }
+  .conformanceCard {
+    width: 24.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+.chartContainer {
+  width: 100%;
+  background-color: white;
+  padding: 3rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.chartContainer img {
+  width: 100%;
+}
+
+.chartLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: lighter;
+  color: #666666;
+}
+
+.chartRight {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 1.3rem;
+  font-size: 24px;
+}
+
+.chartRight span {
+  color: #666666;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .chartContainer {
+    padding: 1rem;
+  }
+  .chartRight {
+    font-size: 1rem;
+  }
+  .chartRight span {
+    line-height: 1.3rem;
+  }
+}

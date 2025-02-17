@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Feature from "./components/Feature";
+import Chart from "./components/Chart";
+import DeploymentFeatures from "./components/DeploymentFeatures";
+import ScaleCard from "./components/ScaleCard";
+import DeployCard from "./components/DeployCard";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="vercel-page-container">
+      <Navbar />
+      <div className="content-section">
+        <HeroSection />
+        <Feature />
+        <Chart />
+        <DeploymentFeatures />
+        <ScaleCard />
+        <DeployCard />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

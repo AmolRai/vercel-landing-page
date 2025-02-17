@@ -1,0 +1,223 @@
+.featureContainer {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  border-bottom: 1px solid #ebebeb;
+  flex-wrap: wrap;
+}
+
+.featureLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 8px;
+}
+
+.leftContent {
+  font-size: 24px;
+}
+
+.leftContent span {
+  color: #666666;
+}
+
+.gitTitle {
+  color: #666666;
+  margin-left: 5px;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.commandline {
+  border: 1px solid #00000014;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  max-width: 340px;
+  padding: 12px;
+  font-size: 14px;
+  gap: 4px;
+  color: #171717;
+  font-weight: lighter;
+  word-spacing: 5px;
+}
+
+.vercelHeader {
+  display: flex;
+  align-items: center;
+}
+
+.vercelHeaderMiddle {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #666666;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.circles {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.commandCircle {
+  background-color: #00000014;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.vercelLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1px solid #c9c9c9;
+  border-left: 0.1px solid #c9c9c9;
+  border-right: 0.1px solid #c9c9c9;
+  margin-top: 5px;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.shadowText {
+  --border: #c9c9c9;
+  text-shadow: -1px -1px 0 var(--border), 0 -1px 0 var(--border),
+    1px -1px 0 var(--border), 1px 0 0 var(--border), 1px 1px 0 var(--border),
+    0 1px 0 var(--border), -1px 1px 0 var(--border), -1px 0 0 var(--border);
+  color: white;
+  font-size: 32px;
+  word-spacing: 0;
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.featureRight {
+  flex: 1;
+}
+
+.rightContent {
+  font-size: 24px;
+  margin-top: 1.5rem;
+}
+
+.rightIcon {
+  display: flex;
+  align-items: center;
+}
+
+.rightIcon svg {
+  color: #666666;
+}
+
+.collaborateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-right: 1rem;
+  color: #171717;
+}
+
+.card {
+  border: 1px solid #00000014;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+  font-size: 14px;
+}
+
+.card span {
+  background: #ebebeb;
+  color: #666666;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.greatTitle {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cardArrow {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.cardArrow svg {
+  position: absolute;
+  top: 0px;
+}
+
+.pranathiTitle {
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 11px;
+  background-color: #48aeff;
+  color: white;
+}
+
+.redIcon svg {
+  top: 30px;
+  right: 38px;
+}
+
+.greenIcon svg {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .featureContainer {
+    padding-left: 1rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .leftContent {
+    font-size: 1rem;
+  }
+  .commandline {
+    max-width: 300px;
+  }
+  .customLayout {
+    top: 10rem !important;
+    right: 1rem !important;
+  }
+
+  .featureRight {
+    margin-top: 5rem;
+  }
+  .rightContent {
+    font-size: 1rem;
+  }
+}

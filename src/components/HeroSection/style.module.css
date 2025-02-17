@@ -1,0 +1,160 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+.heroSectionContent {
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroGradient {
+  height: 350px;
+  display: grid;
+  width: 100%;
+}
+
+.heroGradient::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: 100;
+  background: radial-gradient(
+    120% 70% at 50% 100%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.95) 88%,
+    var(--ds-background-200) 95%
+  );
+}
+
+.triangleRainbow {
+  mix-blend-mode: hard-light;
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    rgba(250, 250, 250, 0) 0deg,
+    #eec32d 72.0000010728836deg,
+    #ec4b4b 144.0000021457672deg,
+    #709ab9 216.00000858306885deg,
+    #4dffbf 288.0000042915344deg,
+    rgba(250, 250, 250, 0) 1turn
+  );
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.heroSection p {
+  color: #666666;
+  font-size: 20px;
+  text-align: center;
+  max-width: 37rem;
+  line-height: 2rem;
+  margin-top: 8px;
+  letter-spacing: 0.1;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.actionBtn button {
+  color: #171717;
+  font-size: 16px;
+  padding: 14px;
+  max-width: 185px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.04);
+}
+
+.deployBtn {
+  background-color: black;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.deployBtn svg {
+  font-size: 1.3rem;
+}
+
+.deployBtn:hover {
+  background-color: #383838;
+}
+
+.demoBtn {
+  background-color: white;
+  border: 1px solid #00000014 !important;
+}
+
+.demoBtn:hover {
+  background-color: #f2f2f2;
+}
+
+.heroTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  color: #171717;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5rem;
+  letter-spacing: 0.2px;
+}
+
+.triangle {
+  width: 1000px;
+  position: absolute;
+  top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .heroGradient {
+    height: 250px;
+  }
+  .heroSection {
+    padding-top: 2rem;
+  }
+  .heroSection h1 {
+    font-size: 1.3rem;
+  }
+  .heroSection p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .heroTitle {
+    font-size: 1.5rem;
+  }
+  .heroTitle svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .triangle {
+    top: -6rem;
+  }
+}
